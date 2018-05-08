@@ -1,0 +1,493 @@
+discount;Region;payment;country_key;revenue;SubRegion
+;South;345.0;380;345.0;South East Europe
+;South;345.0;380;345.0;South East Europe
+;West;345.0;250;345.0;France International
+;South;345.0;380;345.0;South East Europe
+;North;161.0;528;161.0;Netherlands
+;East;161.0;276;161.0;Central Europe
+;South;57.5;380;57.5;South East Europe
+;West;345.0;250;345.0;France International
+;East;57.5;276;57.5;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;West;517.5;250;517.5;France International
+;North;57.5;56;57.5;BeLux
+;West;345.0;250;345.0;France International
+;East;241.5;642;241.5;Eastern Europe
+;West;57.5;250;57.5;France International
+;North;322.0;528;322.0;Netherlands
+;South;57.5;724;57.5;Iberica
+;West;517.5;250;517.5;France International
+;North;322.0;528;322.0;Netherlands
+;East;161.0;276;161.0;Central Europe
+;East;57.5;276;57.5;Central Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;57.5;276;57.5;Central Europe
+;East;241.5;642;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;241.5;440;241.5;Eastern Europe
+;North;57.5;56;57.5;BeLux
+;East;161.0;276;161.0;Central Europe
+;North;57.5;528;57.5;Netherlands
+;East;241.5;642;241.5;Eastern Europe
+;East;57.5;642;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+0.9;North;322.0;528;289.79999232292175;Netherlands
+0.9;North;345.0;826;310.499991774559;Great Britain
+0.9;East;161.0;40;144.89999616146088;Central Europe
+0.9;East;57.5;100;51.74999862909317;Eastern Europe
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;East;241.5;203;217.34999424219131;Eastern Europe
+0.9;North;57.5;528;51.74999862909317;Netherlands
+0.9;South;345.0;380;310.499991774559;South East Europe
+0.9;South;345.0;380;310.499991774559;South East Europe
+0.9;East;57.5;616;51.74999862909317;Eastern Europe
+0.9;East;241.5;348;217.34999424219131;Eastern Europe
+0.9;East;57.5;276;51.74999862909317;Central Europe
+0.9;North;345.0;372;310.499991774559;Great Britain
+0.9;East;241.5;348;217.34999424219131;Eastern Europe
+0.9;West;517.5;250;465.74998766183853;France International
+0.9;East;57.5;642;51.74999862909317;Eastern Europe
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;North;322.0;528;289.79999232292175;Netherlands
+0.9;West;345.0;250;310.499991774559;France International
+0.9;North;57.5;528;51.74999862909317;Netherlands
+0.9;East;241.5;703;217.34999424219131;Eastern Europe
+0.9;West;345.0;250;310.499991774559;France International
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;North;57.5;826;51.74999862909317;Great Britain
+0.9;West;517.5;250;465.74998766183853;France International
+0.9;West;517.5;250;465.74998766183853;France International
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;North;57.5;826;51.74999862909317;Great Britain
+0.9;East;241.5;616;217.34999424219131;Eastern Europe
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;East;57.5;348;51.74999862909317;Eastern Europe
+0.9;North;161.0;208;144.89999616146088;Nordics
+0.9;West;517.5;250;465.74998766183853;France International
+0.9;South;345.0;724;310.499991774559;Iberica
+0.9;East;161.0;276;144.89999616146088;Central Europe
+0.9;West;345.0;250;310.499991774559;France International
+0.9;East;57.5;276;51.74999862909317;Central Europe
+0.9;West;345.0;250;310.499991774559;France International
+0.9;South;172.5;380;155.2499958872795;South East Europe
+0.9;West;517.5;250;465.74998766183853;France International
+;East;57.5;276;57.5;Central Europe
+;North;161.0;528;161.0;Netherlands
+;West;345.0;250;345.0;France International
+;South;172.5;724;172.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;West;517.5;250;517.5;France International
+;North;57.5;528;57.5;Netherlands
+;East;161.0;276;161.0;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;North;161.0;528;161.0;Netherlands
+;East;161.0;276;161.0;Central Europe
+;North;161.0;528;161.0;Netherlands
+;North;57.5;528;57.5;Netherlands
+;East;57.5;276;57.5;Central Europe
+;North;57.5;528;57.5;Netherlands
+;West;345.0;250;345.0;France International
+;North;57.5;56;57.5;BeLux
+;East;57.5;792;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;241.5;348;241.5;Eastern Europe
+;East;57.5;642;57.5;Eastern Europe
+;South;57.5;620;57.5;Iberica
+;South;57.5;724;57.5;Iberica
+;East;57.5;100;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;276;57.5;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;West;57.5;250;57.5;France International
+;East;241.5;348;241.5;Eastern Europe
+;North;57.5;56;57.5;BeLux
+;North;57.5;528;57.5;Netherlands
+;East;57.5;756;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;642;57.5;Eastern Europe
+;South;172.5;620;172.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;East;241.5;642;241.5;Eastern Europe
+;East;161.0;756;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;East;57.5;440;57.5;Eastern Europe
+;South;57.5;380;57.5;South East Europe
+;South;345.0;380;345.0;South East Europe
+;East;57.5;;57.5;Eastern Europe
+;North;322.0;528;322.0;Netherlands
+;West;345.0;250;345.0;France International
+;South;345.0;380;345.0;South East Europe
+;East;241.5;203;241.5;Eastern Europe
+;North;115.0;442;115.0;BeLux
+;East;161.0;276;161.0;Central Europe
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;616;57.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;East;241.5;616;241.5;Eastern Europe
+;North;57.5;826;57.5;Great Britain
+;East;241.5;616;241.5;Eastern Europe
+;East;57.5;40;57.5;Central Europe
+;East;241.5;348;241.5;Eastern Europe
+;West;57.5;250;57.5;France International
+;North;345.0;56;345.0;BeLux
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;East;161.0;276;161.0;Central Europe
+;South;172.5;724;172.5;Iberica
+;West;517.5;250;517.5;France International
+;East;241.5;642;241.5;Eastern Europe
+;West;57.5;250;57.5;France International
+;East;161.0;276;161.0;Central Europe
+;West;517.5;250;517.5;France International
+;South;57.5;724;57.5;Iberica
+;North;322.0;528;322.0;Netherlands
+;West;517.5;250;517.5;France International
+;East;241.5;616;241.5;Eastern Europe
+;South;345.0;380;345.0;South East Europe
+;South;172.5;724;172.5;Iberica
+;South;345.0;380;345.0;South East Europe
+;East;57.5;807;57.5;Eastern Europe
+;East;57.5;642;57.5;Eastern Europe
+;East;241.5;348;241.5;Eastern Europe
+;South;172.5;724;172.5;Iberica
+;South;345.0;380;345.0;South East Europe
+;East;161.0;276;161.0;Central Europe
+;South;57.5;380;57.5;South East Europe
+;East;57.5;807;57.5;Eastern Europe
+;South;172.5;620;172.5;Iberica
+;South;57.5;724;57.5;Iberica
+;East;57.5;807;57.5;Eastern Europe
+;North;115.0;56;115.0;BeLux
+;East;241.5;642;241.5;Eastern Europe
+;West;517.5;250;517.5;France International
+;South;57.5;620;57.5;Iberica
+;South;57.5;380;57.5;South East Europe
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;East;161.0;40;161.0;Central Europe
+;South;57.5;300;57.5;South East Europe
+;North;57.5;528;57.5;Netherlands
+;North;57.5;372;57.5;Great Britain
+;West;57.5;250;57.5;France International
+;South;172.5;620;172.5;Iberica
+;West;345.0;250;345.0;France International
+;South;172.5;724;172.5;Iberica
+;North;57.5;826;57.5;Great Britain
+;North;115.0;56;115.0;BeLux
+;South;57.5;380;57.5;South East Europe
+;South;161.0;380;161.0;South East Europe
+;East;241.5;616;241.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;East;57.5;616;57.5;Eastern Europe
+;East;241.5;191;241.5;Eastern Europe
+;North;57.5;826;57.5;Great Britain
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;East;241.5;616;241.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;North;322.0;528;322.0;Netherlands
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;40;161.0;Central Europe
+;North;115.0;56;115.0;BeLux
+;West;517.5;250;517.5;France International
+;East;161.0;276;161.0;Central Europe
+;North;57.5;826;57.5;Great Britain
+;West;517.5;250;517.5;France International
+;East;57.5;642;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;North;57.5;826;57.5;Great Britain
+;South;57.5;380;57.5;South East Europe
+;North;345.0;826;345.0;Great Britain
+;South;57.5;724;57.5;Iberica
+;East;57.5;276;57.5;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;South;172.5;620;172.5;Iberica
+;West;57.5;250;57.5;France International
+;East;161.0;276;161.0;Central Europe
+;East;57.5;276;57.5;Central Europe
+;West;57.5;250;57.5;France International
+;South;57.5;724;57.5;Iberica
+;South;172.5;724;172.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;East;241.5;428;241.5;Eastern Europe
+;North;57.5;528;57.5;Netherlands
+;North;345.0;826;345.0;Great Britain
+;West;517.5;250;517.5;France International
+;North;115.0;56;115.0;BeLux
+;North;57.5;528;57.5;Netherlands
+;North;57.5;826;57.5;Great Britain
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;North;161.0;752;161.0;Nordics
+;East;57.5;276;57.5;Central Europe
+;West;345.0;250;345.0;France International
+;North;115.0;56;115.0;BeLux
+;North;115.0;56;115.0;BeLux
+;East;241.5;642;241.5;Eastern Europe
+;North;57.5;56;57.5;BeLux
+;East;57.5;642;57.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;West;57.5;250;57.5;France International
+;West;517.5;250;517.5;France International
+;North;57.5;56;57.5;BeLux
+;East;161.0;276;161.0;Central Europe
+;North;322.0;528;322.0;Netherlands
+;West;345.0;250;345.0;France International
+;West;345.0;250;345.0;France International
+;North;161.0;528;161.0;Netherlands
+;East;161.0;276;161.0;Central Europe
+;North;57.5;56;57.5;BeLux
+;North;115.0;56;115.0;BeLux
+;West;517.5;250;517.5;France International
+;South;172.5;724;172.5;Iberica
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;South;57.5;380;57.5;South East Europe
+;South;172.5;620;172.5;Iberica
+;East;57.5;440;57.5;Eastern Europe
+;North;57.5;528;57.5;Netherlands
+;East;57.5;100;57.5;Eastern Europe
+;East;241.5;642;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;North;161.0;528;161.0;Netherlands
+;East;57.5;616;57.5;Eastern Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;East;241.5;616;241.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;North;322.0;528;322.0;Netherlands
+;West;345.0;250;345.0;France International
+;East;161.0;756;161.0;Central Europe
+;East;241.5;642;241.5;Eastern Europe
+;West;517.5;250;517.5;France International
+;South;345.0;380;345.0;South East Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;North;57.5;528;57.5;Netherlands
+;South;172.5;724;172.5;Iberica
+;North;57.5;528;57.5;Netherlands
+;South;57.5;380;57.5;South East Europe
+;North;57.5;56;57.5;BeLux
+;East;241.5;642;241.5;Eastern Europe
+;North;322.0;528;322.0;Netherlands
+;West;517.5;250;517.5;France International
+;South;345.0;380;345.0;South East Europe
+;East;57.5;616;57.5;Eastern Europe
+;North;345.0;826;345.0;Great Britain
+;East;161.0;276;161.0;Central Europe
+;South;57.5;724;57.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;West;345.0;250;345.0;France International
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;East;241.5;616;241.5;Eastern Europe
+;South;345.0;380;345.0;South East Europe
+;West;57.5;250;57.5;France International
+;North;57.5;528;57.5;Netherlands
+;North;322.0;528;322.0;Netherlands
+;East;57.5;616;57.5;Eastern Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;North;57.5;56;57.5;BeLux
+;East;57.5;276;57.5;Central Europe
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;North;57.5;528;57.5;Netherlands
+;North;57.5;528;57.5;Netherlands
+;North;115.0;56;115.0;BeLux
+;East;57.5;616;57.5;Eastern Europe
+;North;345.0;56;345.0;BeLux
+;West;345.0;250;345.0;France International
+;East;57.5;276;57.5;Central Europe
+;North;57.5;56;57.5;BeLux
+;East;161.0;276;161.0;Central Europe
+;West;57.5;250;57.5;France International
+;North;322.0;528;322.0;Netherlands
+;East;241.5;203;241.5;Eastern Europe
+;North;57.5;528;57.5;Netherlands
+;West;345.0;250;345.0;France International
+;South;57.5;724;57.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;East;241.5;616;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;345.0;276;345.0;Central Europe
+;West;57.5;250;57.5;France International
+;South;172.5;724;172.5;Iberica
+;South;172.5;724;172.5;Iberica
+;North;161.0;528;161.0;Netherlands
+;South;57.5;724;57.5;Iberica
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;South;57.5;724;57.5;Iberica
+;East;241.5;616;241.5;Eastern Europe
+;South;57.5;620;57.5;Iberica
+;South;345.0;380;345.0;South East Europe
+;South;57.5;380;57.5;South East Europe
+;East;57.5;756;57.5;Central Europe
+;East;57.5;40;57.5;Central Europe
+;West;517.5;250;517.5;France International
+;South;172.5;724;172.5;Iberica
+;North;57.5;246;57.5;Nordics
+;South;172.5;724;172.5;Iberica
+;East;57.5;616;57.5;Eastern Europe
+;East;57.5;100;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;North;322.0;528;322.0;Netherlands
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;East;161.0;276;161.0;Central Europe
+;South;172.5;620;172.5;Iberica
+;West;57.5;250;57.5;France International
+;East;57.5;616;57.5;Eastern Europe
+;North;57.5;56;57.5;BeLux
+;South;57.5;724;57.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;West;517.5;250;517.5;France International
+;East;161.0;276;161.0;Central Europe
+;North;322.0;528;322.0;Netherlands
+;South;57.5;380;57.5;South East Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;100;57.5;Eastern Europe
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;616;57.5;Eastern Europe
+;North;115.0;56;115.0;BeLux
+;South;57.5;724;57.5;Iberica
+;East;57.5;276;57.5;Central Europe
+;South;345.0;380;345.0;South East Europe
+;East;241.5;616;241.5;Eastern Europe
+;West;517.5;250;517.5;France International
+;North;345.0;372;345.0;Great Britain
+;North;57.5;528;57.5;Netherlands
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;South;57.5;724;57.5;Iberica
+;South;172.5;380;172.5;South East Europe
+;South;57.5;724;57.5;Iberica
+;North;57.5;528;57.5;Netherlands
+;West;57.5;250;57.5;France International
+;East;241.5;203;241.5;Eastern Europe
+;West;57.5;250;57.5;France International
+;East;161.0;276;161.0;Central Europe
+;North;322.0;528;322.0;Netherlands
+;West;517.5;250;517.5;France International
+;North;57.5;826;57.5;Great Britain
+;East;57.5;756;57.5;Central Europe
+;West;57.5;250;57.5;France International
+;East;57.5;642;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+;South;172.5;620;172.5;Iberica
+;East;161.0;276;161.0;Central Europe
+;North;57.5;528;57.5;Netherlands
+;West;345.0;250;345.0;France International
+;North;115.0;56;115.0;BeLux
+;South;172.5;724;172.5;Iberica
+;South;57.5;724;57.5;Iberica
+;West;0.0;250;0.0;France International
+;South;57.5;724;57.5;Iberica
+;South;345.0;380;345.0;South East Europe
+;West;517.5;250;517.5;France International
+;South;57.5;724;57.5;Iberica
+;South;345.0;380;345.0;South East Europe
+;East;57.5;100;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;North;57.5;528;57.5;Netherlands
+;East;57.5;616;57.5;Eastern Europe
+;South;57.5;724;57.5;Iberica
+;West;345.0;250;345.0;France International
+;West;345.0;250;345.0;France International
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;West;345.0;250;345.0;France International
+;East;57.5;276;57.5;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;East;161.0;276;161.0;Central Europe
+;East;241.5;703;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;West;57.5;250;57.5;France International
+;East;57.5;40;57.5;Central Europe
+;East;57.5;276;57.5;Central Europe
+;West;345.0;250;345.0;France International
+;West;345.0;250;345.0;France International
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;West;517.5;250;517.5;France International
+;West;345.0;250;345.0;France International
+;West;517.5;250;517.5;France International
+;West;345.0;250;345.0;France International
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;West;345.0;250;345.0;France International
+;West;517.5;250;517.5;France International
+;West;517.5;250;517.5;France International
+;East;241.5;616;241.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;South;172.5;724;172.5;Iberica
+;West;345.0;250;345.0;France International
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;756;161.0;Central Europe
+;East;57.5;756;57.5;Central Europe
+;East;241.5;616;241.5;Eastern Europe
+;East;241.5;616;241.5;Eastern Europe
+;North;57.5;56;57.5;BeLux
+;North;57.5;56;57.5;BeLux
+;East;57.5;616;57.5;Eastern Europe
+;West;517.5;250;517.5;France International
+;East;161.0;276;161.0;Central Europe
+;North;322.0;528;322.0;Netherlands
+;East;57.5;276;57.5;Central Europe
+;East;57.5;642;57.5;Eastern Europe
+;South;57.5;380;57.5;South East Europe
+;East;57.5;756;57.5;Central Europe
+;East;57.5;100;57.5;Eastern Europe
+;South;57.5;724;57.5;Iberica
+;West;345.0;250;345.0;France International
+;North;345.0;826;345.0;Great Britain
+;East;161.0;276;161.0;Central Europe
+;East;57.5;40;57.5;Central Europe
+;South;172.5;380;172.5;South East Europe
+;East;161.0;276;161.0;Central Europe
+;East;57.5;642;57.5;Eastern Europe
+;West;345.0;250;345.0;France International
+;East;57.5;276;57.5;Central Europe
+;North;57.5;56;57.5;BeLux
+;East;241.5;616;241.5;Eastern Europe
+;South;172.5;724;172.5;Iberica
+;East;57.5;616;57.5;Eastern Europe
+;East;161.0;40;161.0;Central Europe
+;West;345.0;250;345.0;France International
+;East;57.5;100;57.5;Eastern Europe
+;East;161.0;276;161.0;Central Europe
+;West;517.5;250;517.5;France International
+;North;57.5;56;57.5;BeLux
+;East;161.0;276;161.0;Central Europe
