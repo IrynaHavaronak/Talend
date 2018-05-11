@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Yf3JoFUQEeiex84NE7bY5Q" name="read_file" dataPackage="_Yf3JoVUQEeiex84NE7bY5Q" Server="Localhost 127.0.0.1" FilePath="D:/Iryna Havaronak/Talend/Topic 03/input/Payments_2013.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Yf3JoVUQEeiex84NE7bY5Q" name="default" dataManager="_Yf3JoFUQEeiex84NE7bY5Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Yf3JolUQEeiex84NE7bY5Q" id="_2hveUFUPEeiex84NE7bY5Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3Jo1UQEeiex84NE7bY5Q" label="_PaymentID" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

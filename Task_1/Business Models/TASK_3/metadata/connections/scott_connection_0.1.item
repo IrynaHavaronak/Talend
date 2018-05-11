@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_yKUJ4FT1Eeiex84NE7bY5Q" name="scott_connection" id="_k0Hk0FT1Eeiex84NE7bY5Q" label="scott_connection" dataPackage="_yRH8gFT1Eeiex84NE7bY5Q" ContextMode="true" ContextId="_eb1gMFUNEeiex84NE7bY5Q" contextName="Default" DatabaseType="Oracle with service name" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=192.168.56.1)(port=1521))(connect_data=(service_name=orcl)))" dbVersionString="ORACLE_12" Port="context.scott_connection_Port" Username="context.scott_connection_Login" Password="context.scott_connection_Password" ServerName="context.scott_connection_Server" DatasourceName="" FileFieldName="" SID="context.scott_connection_ServiceName" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="context.scott_connection_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.scott_connection_Schema">
+    <taggedValue xmi:id="_yKVYAFT1Eeiex84NE7bY5Q" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_yKuZkFT1Eeiex84NE7bY5Q" tag="package filter" value=""/>
+    <taggedValue xmi:id="_yK9DEFT1Eeiex84NE7bY5Q" tag="Status" value=""/>
+    <taggedValue xmi:id="_yK9DEVT1Eeiex84NE7bY5Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_yK9DElT1Eeiex84NE7bY5Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_yK9DE1T1Eeiex84NE7bY5Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_yK9DFFT1Eeiex84NE7bY5Q" tag="Author" value=""/>
+    <taggedValue xmi:id="_yK9DFVT1Eeiex84NE7bY5Q" tag="otherParameter"/>
+    <taggedValue xmi:id="_yO02cFT1Eeiex84NE7bY5Q" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_yO02cVT1Eeiex84NE7bY5Q" tag="DB ProductVersion" value="Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production"/>
+    <taggedValue xmi:id="_yO02clT1Eeiex84NE7bY5Q" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <queries xmi:id="_BBy7gFT2Eeiex84NE7bY5Q">
+      <query xmi:id="_BBy7glT2Eeiex84NE7bY5Q" id="_BBy7gVT2Eeiex84NE7bY5Q" label="filenames" value="select filename from filenames"/>
+    </queries>
+    <parameters xmi:id="_yKVYAVT1Eeiex84NE7bY5Q" key="CONN_PARA_KEY_USERNAME" value="context.scott_connection_Login"/>
+    <parameters xmi:id="_xTpfQFUDEeiex84NE7bY5Q" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_yRH8gFT1Eeiex84NE7bY5Q" name="SCOTT" dataManager="_yKUJ4FT1Eeiex84NE7bY5Q">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Cg6dgFT5Eeiex84NE7bY5Q" name="FILENAMES" id="_Cg52cFT5Eeiex84NE7bY5Q" label="FILENAMES" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_Cg7EkFT5Eeiex84NE7bY5Q" name="FILENAME" label="FILENAME" length="30" sourceType="VARCHAR2" talendType="id_String">
+        <taggedValue xmi:id="_Cg7EkVT5Eeiex84NE7bY5Q" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_Cg7EklT5Eeiex84NE7bY5Q" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_Cg7Ek1T5Eeiex84NE7bY5Q" name="VARCHAR2" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>
