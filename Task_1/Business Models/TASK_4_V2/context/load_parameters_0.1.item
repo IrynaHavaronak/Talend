@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_j_pX4FXaEei3VLkHSOvIdw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_qvX_QFXaEei3VLkHSOvIdw" comment="" name="directory" prompt="directory?" promptNeeded="false" type="id_String" value="&quot;D:/Iryna Havaronak/Talend/Topic 03/input&quot;"/>
+</talendfile:ContextType>

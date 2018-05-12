@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_oCtaIFXZEei3VLkHSOvIdw" name="scott_connection" id="_hiSPgFXYEei3VLkHSOvIdw" label="scott_connection" dataPackage="_oJDSsFXZEei3VLkHSOvIdw" ContextMode="true" ContextId="_nyaUUFXZEei3VLkHSOvIdw" contextName="Default" DatabaseType="Oracle with service name" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=192.168.56.1)(port=1521))(connect_data=(service_name=orcl)))" dbVersionString="ORACLE_12" Port="context.scott_connection_Port" Username="context.scott_connection_Login" Password="context.scott_connection_Password" ServerName="context.scott_connection_Server" DatasourceName="" FileFieldName="" SID="context.scott_connection_ServiceName" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="context.scott_connection_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.scott_connection_Schema">
+    <taggedValue xmi:id="_oCuBMFXZEei3VLkHSOvIdw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_oDIQ4FXZEei3VLkHSOvIdw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_oDVsQFXZEei3VLkHSOvIdw" tag="Status" value=""/>
+    <taggedValue xmi:id="_oDWTUFXZEei3VLkHSOvIdw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_oDWTUVXZEei3VLkHSOvIdw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_oDWTUlXZEei3VLkHSOvIdw" tag="Description" value=""/>
+    <taggedValue xmi:id="_oDWTU1XZEei3VLkHSOvIdw" tag="Author" value=""/>
+    <taggedValue xmi:id="_oDWTVFXZEei3VLkHSOvIdw" tag="otherParameter"/>
+    <taggedValue xmi:id="_oGmboFXZEei3VLkHSOvIdw" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_oGmboVXZEei3VLkHSOvIdw" tag="DB ProductVersion" value="Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production"/>
+    <taggedValue xmi:id="_oGmbolXZEei3VLkHSOvIdw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_oCuBMVXZEei3VLkHSOvIdw" key="CONN_PARA_KEY_USERNAME" value="context.scott_connection_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_oJDSsFXZEei3VLkHSOvIdw" name="SCOTT" dataManager="_oCtaIFXZEei3VLkHSOvIdw"/>
+</xmi:XMI>
