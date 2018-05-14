@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/dbmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="purchase_20130101.csv"/>
+    <contextParameter comment="" name="directory_path" prompt="directory_path?" promptNeeded="false" repositoryContextId="_wcGUYFdBEeiZjP1ilr46uQ" type="id_String" value="&quot;D:/Iryna Havaronak/Talend/Topic 05 Exit Task&quot;"/>
+    <contextParameter comment="" name="scott_conn_Password" prompt="scott_conn_Password?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_Password" value="BjUZ3sc4TX4="/>
+    <contextParameter comment="" name="scott_conn_AdditionalParams" prompt="scott_conn_AdditionalParams?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value=""/>
+    <contextParameter comment="" name="scott_conn_Port" prompt="scott_conn_Port?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value="1521"/>
+    <contextParameter comment="" name="scott_conn_Server" prompt="scott_conn_Server?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value="192.168.56.1"/>
+    <contextParameter comment="" name="scott_conn_ServiceName" prompt="scott_conn_ServiceName?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value="orcl"/>
+    <contextParameter comment="" name="scott_conn_Login" prompt="scott_conn_Login?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value="scott"/>
+    <contextParameter comment="" name="scott_conn_Schema" prompt="scott_conn_Schema?" promptNeeded="false" repositoryContextId="_yqiTIFdHEeiZjP1ilr46uQ" type="id_String" value="SCOTT"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="96" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Iryna Havaronak/Talend/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_msf4AFdAEeiZjP1ilr46uQ" name="DataOperation"/>
+    <routinesParameter id="_mwb80FdAEeiZjP1ilr46uQ" name="Mathematical"/>
+    <routinesParameter id="_mwiqgFdAEeiZjP1ilr46uQ" name="Numeric"/>
+    <routinesParameter id="_mwpYMFdAEeiZjP1ilr46uQ" name="Relational"/>
+    <routinesParameter id="_mwwF4FdAEeiZjP1ilr46uQ" name="StringHandling"/>
+    <routinesParameter id="_mwzwQFdAEeiZjP1ilr46uQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_mw4owFdAEeiZjP1ilr46uQ" name="TalendDate"/>
+    <routinesParameter id="_mw9hQFdAEeiZjP1ilr46uQ" name="TalendString"/>
+    <routinesParameter id="_mxBysFdAEeiZjP1ilr46uQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tELTOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_3" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;WRK_PURCHASE&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="SCOTT.WRK_PURCHASE" name="tELTOracleInput_3">
+      <column comment="" key="false" length="8" name="paymentid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customerid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="productid" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="transactiondate" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcard" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcardnumber" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tELTOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_1" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;WRK_CUSTOMERS&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="SCOTT.WRK_CUSTOMERS" name="tELTOracleInput_1">
+      <column comment="" key="false" length="8" name="id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="5005" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="username" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateofbirth" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="streetaddress" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="state" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tELTOracleMap" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleMap_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hJ-YsFdCEeiZjP1ilr46uQ-tELTOracleMap_1-PREVIEW.bmp"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="dim_customers" name="table1">
+      <column comment="" key="false" length="8" name="customer_id_surr" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="5005" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="username" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateofbirth" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="streetaddress" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="state" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="DBMapData">
+      <InputTables name="SCOTT.WRK_CUSTOMERS" tableName="SCOTT.WRK_CUSTOMERS" joinType="NO_JOIN">
+        <DBMapperTableEntries name="id"/>
+        <DBMapperTableEntries name="name"/>
+        <DBMapperTableEntries name="username"/>
+        <DBMapperTableEntries name="email"/>
+        <DBMapperTableEntries name="dateofbirth"/>
+        <DBMapperTableEntries name="streetaddress"/>
+        <DBMapperTableEntries name="city"/>
+        <DBMapperTableEntries name="country"/>
+        <DBMapperTableEntries name="zip"/>
+        <DBMapperTableEntries name="state"/>
+        <DBMapperTableEntries name="phone"/>
+      </InputTables>
+      <OutputTables name="table1" tableName="dim_customers">
+        <DBMapperTableEntries name="customer_id_surr" expression="customer_seq.nextval"/>
+        <DBMapperTableEntries name="customer_id" expression="SCOTT.WRK_CUSTOMERS.id "/>
+        <DBMapperTableEntries name="name" expression="SCOTT.WRK_CUSTOMERS.name "/>
+        <DBMapperTableEntries name="username" expression="SCOTT.WRK_CUSTOMERS.username "/>
+        <DBMapperTableEntries name="email" expression="SCOTT.WRK_CUSTOMERS.email "/>
+        <DBMapperTableEntries name="dateofbirth" expression="SCOTT.WRK_CUSTOMERS.dateofbirth "/>
+        <DBMapperTableEntries name="streetaddress" expression="SCOTT.WRK_CUSTOMERS.streetaddress "/>
+        <DBMapperTableEntries name="city" expression="SCOTT.WRK_CUSTOMERS.city "/>
+        <DBMapperTableEntries name="country" expression="SCOTT.WRK_CUSTOMERS.country "/>
+        <DBMapperTableEntries name="zip" expression="SCOTT.WRK_CUSTOMERS.zip "/>
+        <DBMapperTableEntries name="state" expression="SCOTT.WRK_CUSTOMERS.state "/>
+        <DBMapperTableEntries name="phone" expression="SCOTT.WRK_CUSTOMERS.phone "/>
+      </OutputTables>
+    </nodeData>
+  </node>
+  <node componentName="tELTOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_2" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;WRK_PRODUCTS&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="SCOTT.WRK_PRODUCTS" name="tELTOracleInput_2">
+      <column comment="" key="false" length="8" name="products" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="productname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="companyname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="price" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="warehouselocationstate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tELTOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="MEMO" name="WHERE_CLAUSE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_UPDATE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id_surr"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="username"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateofbirth"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="streetaddress"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_WHERE_STRING" value="&quot;target.customers_id_surr = source.customer_id_surr &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_DELETE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_DELETE_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_INSERT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id_surr"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="username"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateofbirth"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="streetaddress"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="INSERT" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_INSERT_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;DIM_CUSTOMERS&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="CHECK" name="IS_TABLE_NAME_VARIABLE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DIFFERENT_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="DIFFERENT_TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="dim_customers" name="tELTOracleOutput_1">
+      <column comment="" key="false" length="8" name="customer_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="5005" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="username" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateofbirth" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="streetaddress" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="state" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tELTOracleMap" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleMap_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hJ-YsFdCEeiZjP1ilr46uQ-tELTOracleMap_2-PREVIEW.bmp"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="dim_products" name="table2">
+      <column comment="" key="false" length="8" name="Products_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="products_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="productname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="companyname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="price" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="warehouselocationstate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="DBMapData">
+      <InputTables name="SCOTT.WRK_PRODUCTS" tableName="SCOTT.WRK_PRODUCTS" joinType="NO_JOIN">
+        <DBMapperTableEntries name="products"/>
+        <DBMapperTableEntries name="productname"/>
+        <DBMapperTableEntries name="companyname"/>
+        <DBMapperTableEntries name="price"/>
+        <DBMapperTableEntries name="warehouselocationstate"/>
+      </InputTables>
+      <OutputTables name="table2" tableName="dim_products">
+        <DBMapperTableEntries name="Products_id_surr" expression="product_seq.nextval"/>
+        <DBMapperTableEntries name="products_id" expression="SCOTT.WRK_PRODUCTS.products "/>
+        <DBMapperTableEntries name="productname" expression="SCOTT.WRK_PRODUCTS.productname "/>
+        <DBMapperTableEntries name="companyname" expression="SCOTT.WRK_PRODUCTS.companyname "/>
+        <DBMapperTableEntries name="price" expression="SCOTT.WRK_PRODUCTS.price "/>
+        <DBMapperTableEntries name="warehouselocationstate" expression="SCOTT.WRK_PRODUCTS.warehouselocationstate "/>
+      </OutputTables>
+    </nodeData>
+  </node>
+  <node componentName="tELTOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleOutput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="MEMO" name="WHERE_CLAUSE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_UPDATE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Products_id_surr"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="products_id"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productname"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="companyname"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="price"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="warehouselocationstate"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_DELETE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_DELETE_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_INSERT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Products_id_surr"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="products_id"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="productname"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="companyname"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="price"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="warehouselocationstate"/>
+      <elementValue elementRef="INSERT" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_INSERT_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;DIM_PRODUCTS&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="CHECK" name="IS_TABLE_NAME_VARIABLE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DIFFERENT_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="DIFFERENT_TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="dim_products" name="tELTOracleOutput_2">
+      <column comment="" key="false" length="8" name="Products_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="products_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="productname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="companyname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="price" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="warehouselocationstate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tELTOracleMap" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleMap_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rG8l4FdHEeiZjP1ilr46uQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="context.scott_conn_Server" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.scott_conn_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.scott_conn_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.scott_conn_ServiceName" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.scott_conn_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucv1CDl8wB+6ISc3NSwMkxOqpFT90vRRJM=" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hJ-YsFdCEeiZjP1ilr46uQ-tELTOracleMap_3-PREVIEW.bmp"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.scott_conn_AdditionalParams" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="dim_customers" name="table3">
+      <column comment="" key="false" length="8" name="customer_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="5005" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="username" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateofbirth" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="streetaddress" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="city" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="state" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="TABLE" label="dim_products" name="table4">
+      <column comment="" key="false" length="8" name="Products_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="products_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="productname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="companyname" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="price" nullable="true" pattern="" precision="-1" sourceType="FLOAT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="warehouselocationstate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="TABLE" label="fct_purchases" name="table5">
+      <column comment="" key="false" length="8" name="payment_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="product_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="transactiondate" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcard" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcardnumber" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Products_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IsInterState" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="payment_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="DBMapData">
+      <InputTables name="SCOTT.DIM_PRODUCTS" tableName="SCOTT.DIM_PRODUCTS" joinType="NO_JOIN">
+        <DBMapperTableEntries name="Products_id_surr"/>
+        <DBMapperTableEntries name="products_id" expression="SCOTT.WRK_PURCHASE.productid " operator="="/>
+        <DBMapperTableEntries name="productname"/>
+        <DBMapperTableEntries name="companyname"/>
+        <DBMapperTableEntries name="price"/>
+        <DBMapperTableEntries name="warehouselocationstate"/>
+      </InputTables>
+      <InputTables name="SCOTT.DIM_CUSTOMERS" tableName="SCOTT.DIM_CUSTOMERS" joinType="NO_JOIN">
+        <DBMapperTableEntries name="customer_id_surr"/>
+        <DBMapperTableEntries name="customer_id" expression="SCOTT.WRK_PURCHASE.customerid " operator="="/>
+        <DBMapperTableEntries name="name"/>
+        <DBMapperTableEntries name="username"/>
+        <DBMapperTableEntries name="email"/>
+        <DBMapperTableEntries name="dateofbirth"/>
+        <DBMapperTableEntries name="streetaddress"/>
+        <DBMapperTableEntries name="city"/>
+        <DBMapperTableEntries name="country"/>
+        <DBMapperTableEntries name="zip"/>
+        <DBMapperTableEntries name="state"/>
+        <DBMapperTableEntries name="phone"/>
+      </InputTables>
+      <InputTables name="SCOTT.WRK_PURCHASE" tableName="SCOTT.WRK_PURCHASE" joinType="NO_JOIN">
+        <DBMapperTableEntries name="paymentid"/>
+        <DBMapperTableEntries name="customerid"/>
+        <DBMapperTableEntries name="productid"/>
+        <DBMapperTableEntries name="transactiondate"/>
+        <DBMapperTableEntries name="creditcard"/>
+        <DBMapperTableEntries name="creditcardnumber"/>
+      </InputTables>
+      <OutputTables name="table3" tableName="dim_customers">
+        <DBMapperTableEntries name="customer_id_surr" expression="SCOTT.DIM_CUSTOMERS.customer_id_surr "/>
+        <DBMapperTableEntries name="customer_id" expression="SCOTT.DIM_CUSTOMERS.customer_id "/>
+        <DBMapperTableEntries name="name" expression="SCOTT.DIM_CUSTOMERS.name "/>
+        <DBMapperTableEntries name="username" expression="SCOTT.DIM_CUSTOMERS.username "/>
+        <DBMapperTableEntries name="email" expression="SCOTT.DIM_CUSTOMERS.email "/>
+        <DBMapperTableEntries name="dateofbirth" expression="SCOTT.DIM_CUSTOMERS.dateofbirth "/>
+        <DBMapperTableEntries name="streetaddress" expression="SCOTT.DIM_CUSTOMERS.streetaddress "/>
+        <DBMapperTableEntries name="city" expression="SCOTT.DIM_CUSTOMERS.city "/>
+        <DBMapperTableEntries name="country" expression="SCOTT.DIM_CUSTOMERS.country "/>
+        <DBMapperTableEntries name="zip" expression="SCOTT.DIM_CUSTOMERS.zip "/>
+        <DBMapperTableEntries name="state" expression="SCOTT.DIM_CUSTOMERS.state "/>
+        <DBMapperTableEntries name="phone" expression="SCOTT.DIM_CUSTOMERS.phone "/>
+      </OutputTables>
+      <OutputTables name="table4" tableName="dim_products">
+        <DBMapperTableEntries name="Products_id_surr" expression="SCOTT.DIM_PRODUCTS.Products_id_surr "/>
+        <DBMapperTableEntries name="products_id" expression="SCOTT.DIM_PRODUCTS.products_id "/>
+        <DBMapperTableEntries name="productname" expression="SCOTT.DIM_PRODUCTS.productname "/>
+        <DBMapperTableEntries name="companyname" expression="SCOTT.DIM_PRODUCTS.companyname "/>
+        <DBMapperTableEntries name="price" expression="SCOTT.DIM_PRODUCTS.price "/>
+        <DBMapperTableEntries name="warehouselocationstate" expression="SCOTT.DIM_PRODUCTS.warehouselocationstate "/>
+      </OutputTables>
+      <OutputTables name="table5" tableName="fct_purchases">
+        <DBMapperTableEntries name="payment_id" expression="SCOTT.WRK_PURCHASE.paymentid "/>
+        <DBMapperTableEntries name="customer_id" expression="SCOTT.WRK_PURCHASE.customerid "/>
+        <DBMapperTableEntries name="product_id" expression="SCOTT.WRK_PURCHASE.productid "/>
+        <DBMapperTableEntries name="transactiondate" expression="SCOTT.WRK_PURCHASE.transactiondate "/>
+        <DBMapperTableEntries name="creditcard" expression="SCOTT.WRK_PURCHASE.creditcard "/>
+        <DBMapperTableEntries name="creditcardnumber" expression="SCOTT.WRK_PURCHASE.creditcardnumber "/>
+        <DBMapperTableEntries name="customer_id_surr" expression="SCOTT.DIM_CUSTOMERS.customer_id_surr "/>
+        <DBMapperTableEntries name="Products_id_surr" expression="SCOTT.DIM_PRODUCTS.Products_id_surr "/>
+        <DBMapperTableEntries name="IsInterState" expression="decode(SCOTT.DIM_PRODUCTS.warehouselocationstate ,SCOTT.DIM_CUSTOMERS.state , 0, 1)"/>
+        <DBMapperTableEntries name="payment_id_surr" expression="purchase_seq.nextval"/>
+      </OutputTables>
+    </nodeData>
+  </node>
+  <node componentName="tELTOracleOutput" componentVersion="0.102" offsetLabelX="4" offsetLabelY="0" posX="992" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleOutput_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="MEMO" name="WHERE_CLAUSE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_UPDATE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_id"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="transactiondate"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="creditcard"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="creditcardnumber"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id_surr"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Products_id_surr"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsInterState"/>
+      <elementValue elementRef="UPDATE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id_surr"/>
+      <elementValue elementRef="UPDATE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_UPDATE_DELETE_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_UPDATE_DELETE_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT" value="true" show="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_INSERT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_id"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="transactiondate"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="creditcard"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="creditcardnumber"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id_surr"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Products_id_surr"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsInterState"/>
+      <elementValue elementRef="INSERT" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id_surr"/>
+      <elementValue elementRef="INSERT" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_MERGE_INSERT_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MERGE_INSERT_WHERE_STRING" value="&quot; &quot;" show="false"/>
+    <elementParameter field="TEXT" name="ELT_TABLE_NAME" value="&quot;fct_purchases&quot;"/>
+    <elementParameter field="TEXT" name="ELT_SCHEMA_NAME" value="&quot;SCOTT&quot;"/>
+    <elementParameter field="CHECK" name="IS_TABLE_NAME_VARIABLE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DIFFERENT_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="DIFFERENT_TABLE_NAME" value="&quot;fct_purchases&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="TABLE" label="fct_purchases" name="tELTOracleOutput_3">
+      <column comment="" key="false" length="8" name="payment_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="product_id" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="transactiondate" nullable="true" pattern="" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcard" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="creditcardnumber" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customer_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Products_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IsInterState" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="payment_id_surr" nullable="true" pattern="" precision="-1" sourceType="NUMBER" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rG8l4FdHEeiZjP1ilr46uQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="context.scott_conn_Server" show="false"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.scott_conn_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.scott_conn_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.scott_conn_ServiceName"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.scott_conn_ServiceName" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.scott_conn_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.scott_conn_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucv1CDl8wB+6ISc3NSwMkxOqpFT90vRRJM="/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" value="true" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.scott_conn_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="scott_conn"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="TABLE" label="SCOTT.WRK_PURCHASE" lineStyle="9" metaname="tELTOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tELTOracleInput_3" target="tELTOracleMap_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_3" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="SCOTT.WRK_CUSTOMERS" lineStyle="9" metaname="tELTOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tELTOracleInput_1" target="tELTOracleMap_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_1" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="dim_customers" lineStyle="9" metaname="table1" offsetLabelX="0" offsetLabelY="0" source="tELTOracleMap_1" target="tELTOracleOutput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="table1" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="SCOTT.WRK_PRODUCTS" lineStyle="9" metaname="tELTOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tELTOracleInput_2" target="tELTOracleMap_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_2" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="SCOTT.DIM_CUSTOMERS" lineStyle="9" metaname="tELTOracleOutput_1" offsetLabelX="0" offsetLabelY="0" source="tELTOracleOutput_1" target="tELTOracleMap_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleOutput_1" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="dim_products" lineStyle="9" metaname="table2" offsetLabelX="0" offsetLabelY="0" source="tELTOracleMap_2" target="tELTOracleOutput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="table2" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="SCOTT.DIM_PRODUCTS" lineStyle="9" metaname="tELTOracleOutput_2" offsetLabelX="0" offsetLabelY="0" source="tELTOracleOutput_2" target="tELTOracleMap_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleOutput_2" show="false"/>
+  </connection>
+  <connection connectorName="TABLE" label="fct_purchases" lineStyle="9" metaname="table5" offsetLabelX="0" offsetLabelY="0" source="tELTOracleMap_3" target="tELTOracleOutput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="table5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tELTOracleInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+</talendfile:ProcessType>

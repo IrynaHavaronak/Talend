@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_yqt5UFdHEeiZjP1ilr46uQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_yqt5UVdHEeiZjP1ilr46uQ" comment="" name="scott_conn_Server" prompt="scott_conn_Server?" promptNeeded="false" type="id_String" value="192.168.56.1"/>
+  <contextParameter xmi:id="_yqt5UldHEeiZjP1ilr46uQ" comment="" name="scott_conn_Port" prompt="scott_conn_Port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_yqt5U1dHEeiZjP1ilr46uQ" comment="" name="scott_conn_AdditionalParams" prompt="scott_conn_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_yqt5VFdHEeiZjP1ilr46uQ" comment="" name="scott_conn_Login" prompt="scott_conn_Login?" promptNeeded="false" type="id_String" value="scott"/>
+  <contextParameter xmi:id="_yqt5VVdHEeiZjP1ilr46uQ" comment="" name="scott_conn_Schema" prompt="scott_conn_Schema?" promptNeeded="false" type="id_String" value="SCOTT"/>
+  <contextParameter xmi:id="_yqt5VldHEeiZjP1ilr46uQ" comment="" name="scott_conn_ServiceName" prompt="scott_conn_ServiceName?" promptNeeded="false" type="id_String" value="orcl"/>
+  <contextParameter xmi:id="_yqt5V1dHEeiZjP1ilr46uQ" comment="" name="scott_conn_Password" prompt="scott_conn_Password?" promptNeeded="false" type="id_Password" value="BjUZ3sc4TX4="/>
+</talendfile:ContextType>
